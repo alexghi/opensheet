@@ -1,6 +1,6 @@
 {
   "redirects": [
-    { "source": "/", "destination": "https://benborgers.com/posts/google-sheets-json" }
+    { "source": "/", "destination": "https://www.aripisprecer.ro/" }
   ],
   "rewrites": [
     { "source": "/:id/:sheet", "destination": "/api/index" }

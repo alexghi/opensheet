@@ -41,7 +41,7 @@ export default async function (req, res) {
 		})
 
 		// Cache rows for 30 seconds.
-		res.setHeader('Cache-Control', 's-maxage=30')
+		res.setHeader('Cache-Control', 's-maxage=30', 'stale-while-revalidate=59')
 		return res.json(rows)
 	})
 }
