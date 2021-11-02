@@ -37,7 +37,9 @@ export default async function (req, res) {
 			row.forEach((item, index) => {
 				rowData[headers[index]] = item
 			})
-			rows.push(rowData)
+			rows.push({
+				[rowData[headers]]: rowData
+			})
 		})
 
 		// Cache rows for 30 seconds.
